@@ -1,0 +1,64 @@
+version: "3"
+services:
+  hub:
+    image: selenium/hub:3.14
+    ports: 
+      - "4444:4444"
+  chrome:
+    image: selenium/node-chrome:3.14
+    depends_on:
+      - hub
+    environment:
+      - HUB_HOST=hub
+  firefox:
+    image: selenium/node-firefox:3.14
+    shm_size: '1gb'
+    depends_on:
+      - hub
+    environment:
+      - HUB_HOST=hub
+  test-module_1:
+    image: 247sri/docker_selenium
+    depends_on:
+      - chrome
+      - firefox
+    environment:
+      - BROWSER=firefox
+      - HUB_HOST=hub
+      - MODULE=SearchModuleTest.xml
+    volumes:
+      - ./test-module_1:/runs/tests/test-output
+  test-module_2:
+    image: 247sri/docker_selenium
+    depends_on:
+      - chrome
+      - firefox
+    environment:
+      - BROWSER=chrome
+      - HUB_HOST=hub
+      - MODULE=SearchModuleTest.xml
+    volumes:
+      - ./test-module_2:/runs/tests/test-output
+  book-flight-module_1:
+    image: 247sri/docker_selenium
+    depends_on:
+      - chrome
+      - firefox
+    environment:
+      - BROWSER=chrome
+      - HUB_HOST=hub
+      - MODULE=FlightBookingTest.xml
+    volumes:
+      - ./flightbook-module_1:/runs/tests/test-output
+  book-flight-module_2:
+    image: 247sri/docker_selenium
+    depends_on:
+      - chrome
+      - firefox
+    environment:
+      - BROWSER=firefox
+      - HUB_HOST=hub
+      - MODULE=FlightBookingTest.xml
+    volumes:
+      - ./flightbook-module_2:/runs/tests/test-output
+

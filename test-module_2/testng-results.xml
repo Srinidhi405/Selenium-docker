@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-07-06T10:24:00 GMT" name="SearchModuleTest" finished-at="2020-07-06T10:24:57 GMT" duration-ms="56921">
+    <groups>
+    </groups>
+    <test started-at="2020-07-06T10:24:00 GMT" name="search-test-java" finished-at="2020-07-06T10:24:24 GMT" duration-ms="23692">
+      <class name="com.goduckduck.searchtest.SearchTest">
+        <test-method is-config="true" signature="setUp(org.testng.ITestContext)[pri:0, instance:com.goduckduck.searchtest.SearchTest@130161f7]" started-at="2020-07-06T10:24:01 GMT" name="setUp" finished-at="2020-07-06T10:24:10 GMT" duration-ms="9521" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@4201a617]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="searchingTest(java.lang.String)[pri:0, instance:com.goduckduck.searchtest.SearchTest@130161f7]" started-at="2020-07-06T10:24:10 GMT" name="searchingTest" finished-at="2020-07-06T10:24:24 GMT" duration-ms="13602" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[java]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchingTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.goduckduck.searchtest.SearchTest@130161f7]" started-at="2020-07-06T10:24:24 GMT" name="tearDown" finished-at="2020-07-06T10:24:24 GMT" duration-ms="300" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.goduckduck.searchtest.SearchTest -->
+    </test> <!-- search-test-java -->
+    <test started-at="2020-07-06T10:24:25 GMT" name="search-test-webdriver" finished-at="2020-07-06T10:24:36 GMT" duration-ms="11156">
+      <class name="com.goduckduck.searchtest.SearchTest">
+        <test-method is-config="true" signature="setUp(org.testng.ITestContext)[pri:0, instance:com.goduckduck.searchtest.SearchTest@dbf57b3]" started-at="2020-07-06T10:24:25 GMT" name="setUp" finished-at="2020-07-06T10:24:28 GMT" duration-ms="3521" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@467f77a5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="searchingTest(java.lang.String)[pri:0, instance:com.goduckduck.searchtest.SearchTest@dbf57b3]" started-at="2020-07-06T10:24:28 GMT" name="searchingTest" finished-at="2020-07-06T10:24:36 GMT" duration-ms="7459" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[webdriver]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchingTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.goduckduck.searchtest.SearchTest@dbf57b3]" started-at="2020-07-06T10:24:36 GMT" name="tearDown" finished-at="2020-07-06T10:24:36 GMT" duration-ms="173" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.goduckduck.searchtest.SearchTest -->
+    </test> <!-- search-test-webdriver -->
+    <test started-at="2020-07-06T10:24:36 GMT" name="search-test-docker" finished-at="2020-07-06T10:24:48 GMT" duration-ms="11995">
+      <class name="com.goduckduck.searchtest.SearchTest">
+        <test-method is-config="true" signature="setUp(org.testng.ITestContext)[pri:0, instance:com.goduckduck.searchtest.SearchTest@4d9e68d0]" started-at="2020-07-06T10:24:36 GMT" name="setUp" finished-at="2020-07-06T10:24:39 GMT" duration-ms="3234" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@1bb9aa43]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="searchingTest(java.lang.String)[pri:0, instance:com.goduckduck.searchtest.SearchTest@4d9e68d0]" started-at="2020-07-06T10:24:39 GMT" name="searchingTest" finished-at="2020-07-06T10:24:48 GMT" duration-ms="8603" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[docker]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchingTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.goduckduck.searchtest.SearchTest@4d9e68d0]" started-at="2020-07-06T10:24:48 GMT" name="tearDown" finished-at="2020-07-06T10:24:48 GMT" duration-ms="144" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.goduckduck.searchtest.SearchTest -->
+    </test> <!-- search-test-docker -->
+    <test started-at="2020-07-06T10:24:48 GMT" name="search-test-kubernetes" finished-at="2020-07-06T10:24:57 GMT" duration-ms="9059">
+      <class name="com.goduckduck.searchtest.SearchTest">
+        <test-method is-config="true" signature="setUp(org.testng.ITestContext)[pri:0, instance:com.goduckduck.searchtest.SearchTest@1a451d4d]" started-at="2020-07-06T10:24:48 GMT" name="setUp" finished-at="2020-07-06T10:24:51 GMT" duration-ms="3029" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@420bc288]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="searchingTest(java.lang.String)[pri:0, instance:com.goduckduck.searchtest.SearchTest@1a451d4d]" started-at="2020-07-06T10:24:51 GMT" name="searchingTest" finished-at="2020-07-06T10:24:57 GMT" duration-ms="5848" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[kubernetes]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchingTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.goduckduck.searchtest.SearchTest@1a451d4d]" started-at="2020-07-06T10:24:57 GMT" name="tearDown" finished-at="2020-07-06T10:24:57 GMT" duration-ms="176" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.goduckduck.searchtest.SearchTest -->
+    </test> <!-- search-test-kubernetes -->
+  </suite> <!-- SearchModuleTest -->
+</testng-results>

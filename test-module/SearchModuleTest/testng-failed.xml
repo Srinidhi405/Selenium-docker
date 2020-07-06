@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [SearchModuleTest]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="search-test-docker(failed)">
+    <parameter name="SearchTest" value="docker"/>
+    <classes>
+      <class name="com.goduckduck.searchtest.SearchTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="searchingTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.goduckduck.searchtest.SearchTest -->
+    </classes>
+  </test> <!-- search-test-docker(failed) -->
+</suite> <!-- Failed suite [SearchModuleTest] -->
